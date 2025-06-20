@@ -1,0 +1,92 @@
+:root {
+  --color-1: #e0e9eb; /* Fondo claro */
+  --color-2: #e0e7eb; /* Encabezado tabla */
+  --color-3: #e3e6e8; /* Hover fila */
+  --color-4: #e87d8f; /* Botón principal */
+  --color-5: #e87d7d; /* Rosa más oscuro */
+  --color-6: #d64d4d; /* Para botones eliminar */
+}
+
+body {
+  background-color: var(--color-1);
+  font-family: "Sora", sans-serif;
+}
+
+.accounts-container {
+  margin-top: 80px;
+  padding: 40px;
+  background: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.accounts-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-5);
+}
+
+.controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.accounts-table {
+  margin-bottom: 2rem;
+}
+
+.table-header {
+  background-color: var(--color-2);
+  color: var(--color-5);
+  font-weight: bold;
+}
+
+.table-row:hover {
+  background-color: var(--color-3);
+}
+
+.primary-button {
+  background-color: var(--color-4) !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: none;
+}
+
+.primary-button:hover {
+  background-color: var(--color-5) !important;
+}
+
+.delete-button {
+  background-color: var(--color-6) !important;
+  color: white !important;
+  border-radius: 8px;
+  text-transform: none;
+}
+
+.delete-button:hover {
+  background-color: #b03b3b !important;
+}
+
+.accept-button {
+  background-color: #e87d8f !important;
+  color: black !important;
+  border-radius: 8px;
+  text-transform: none;
+}
+
+.accept-button:hover {
+  background-color: #e3e6e8 !important;
+}
+
+.dialog-button {
+  background-color: var(--color-5) !important;
+  color: grey !important;
+}
+
+.dialog-button:hover {
+  background-color: #c75d5d !important;
+}

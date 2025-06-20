@@ -1,0 +1,68 @@
+.custom-spotlight-card {
+  padding: 16px !important;
+  background-color: var(--color-1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(232, 125, 125, 0.2); /* puedes usar var(--color-5) con opacidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-spotlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(232, 125, 125, 0.35);
+  /* También podrías usar: box-shadow: 0 8px 20px var(--color-5); pero ajusta la opacidad */
+}
+
+.user-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+  user-select: none;
+  border: 2px solid var(--color-4);
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  text-align: center;
+  color: var(--color-5);
+  user-select: none;
+}
+
+.user-email {
+  font-size: 0.875rem;
+  color: var(--color-3);
+  margin-bottom: 4px;
+  text-align: center;
+  user-select: none;
+}
+
+.user-username {
+  font-size: 0.75rem;
+  color: var(--color-2);
+  margin-bottom: 12px;
+  text-align: center;
+  user-select: none;
+}
+
+.button-full-width {
+  width: 100%;
+  font-weight: 600;
+  text-transform: none;
+  margin-top: 6px;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-full-width:hover {
+  opacity: 0.9;
+}

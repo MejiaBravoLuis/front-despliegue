@@ -1,0 +1,102 @@
+.accept-users-container {
+    margin-top: 80px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 64px - 64px);
+  }
+  
+  .accept-users-title {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .accept-users-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .accept-user-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    padding: 4rem;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .accept-user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  }
+  
+  .accept-user-info {
+    color: #f0f0f0;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .user-card-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+  }
+  
+  .user-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .user-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  .user-status {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* un poco más de espacio entre icono y texto */
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  
+  .status-icon {
+    width: 80px;   /* más pequeño para que quede alineado con el texto */
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .add-user-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--color-4);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-user-button:hover {
+    background-color: var(--color-5);
+  }
+  

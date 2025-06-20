@@ -1,0 +1,108 @@
+.profile-container {
+  margin-top: 100px;
+  padding-bottom: 64px;
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 64px - 64px);
+}
+
+/* El contenedor Grid que envuelve ambos paneles */
+.profile-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch; /* ¡Muy importante para que se estiren igual en altura! */
+  flex-wrap: wrap;
+}
+
+/* Cada panel debe ocupar todo el alto disponible */
+.profile-panel {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 280px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+/* Tarjeta Spotlight con altura 100% */
+.custom-spotlight-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  height: 100%;  /* Aquí está el truco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icono de usuario */
+.user-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-button);
+}
+
+/* Texto del usuario */
+.user-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.user-email,
+.user-username {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+/* Formularios */
+.profile-form {
+  background-color: transparent;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  height: 100%; /* para que ocupe toda la altura del panel */
+  justify-content: center;
+}
+
+/* Botones */
+.button-cancelar,
+.button-guardar {
+  padding: 10px 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-transform: none;
+}
+
+.button-cancelar {
+  background-color: transparent;
+  border: 2px solid var(--color-button);
+  color: #e3e6e8;
+}
+
+.button-cancelar:hover {
+  background-color: var(--color-button);
+  color: white;
+}
+
+.button-guardar {
+  background-color: #e3e6e8;
+  color: white;
+}
+
+.button-guardar:hover {
+  background-color: var(--color-button-hover);
+}

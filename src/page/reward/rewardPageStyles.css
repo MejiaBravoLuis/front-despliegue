@@ -1,0 +1,60 @@
+.reward-container {
+  margin-top: 100px;
+  background: var(--color-1); /* Fondo claro suave */
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(232, 125, 141, 0.4); /* sombra en tono rosa */
+  backdrop-filter: blur(10px);
+}
+
+.reward-container h4 {
+  font-weight: bold;
+  color: var(--color-5); /* rosa principal */
+}
+
+.reward-container .MuiTable-root {
+  background: var(--color-2); /* fondo intermedio */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.reward-container .MuiTableCell-head {
+  background-color: var(--color-3); /* fondo más claro */
+  color: var(--color-5); /* texto rosa */
+  font-weight: bold;
+}
+
+.reward-container .MuiTableCell-body {
+  color: var(--color-4); /* rosa más intenso para cuerpo */
+}
+
+.reward-container .MuiTableRow-root {
+  background-color: var(--color-1);
+  transition: background-color 0.3s;
+}
+
+.reward-container .MuiTableRow-root:hover {
+  background-color: var(--color-3);
+}
+
+.snackbar {
+  z-index: 99999;
+  position: fixed;
+}
+
+.snackbar-message {
+  width: 100%;
+}
+
+.reward-container .MuiButton-contained {
+  background-color: var(--color-5);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.reward-container .MuiButton-contained:hover {
+  background-color: var(--color-6);
+}

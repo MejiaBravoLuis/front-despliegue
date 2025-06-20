@@ -1,0 +1,86 @@
+:root {
+  --color-fondo: #e0e9eb;
+  --color-principal: #e87d7d;
+  --color-principal-secundario: #e87d8f;
+  --color-secundario: #ffffffcc;
+  --color-acento: #2c3e50;
+  --color-success: #27ae60;
+  --color-error: #e74c3c;
+  --color-error-hover: #c0392b;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: 'Sora', sans-serif;
+}
+
+.movements-container {
+  margin-top: 80px;
+  padding: 40px;
+  background: var(--color-secundario);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.movements-container h4 {
+  font-weight: bold;
+  color: #e87d7d;
+}
+
+.movements-container .MuiPaper-root {
+  background-color: var(--color-secundario);
+  border-radius: 16px;
+}
+
+.movements-container .MuiTableCell-head {
+  background-color: #e0e7ff;
+  color: #e87d7d;
+  font-weight: bold;
+}
+
+.movements-container .MuiTableCell-body {
+  color: var(--color-acento);
+}
+
+.movements-container .MuiTableRow-root {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.movements-container .MuiTableRow-root:hover {
+  background-color: #f4f6fc;
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  background-color: #e87d8f;
+  border-radius: 8px;
+  color: white;
+  text-transform: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: var(--color-error-hover);
+}
+
+.estado-activo {
+  color: var(--color-success);
+  font-weight: bold;
+}
+
+.estado-cancelado {
+  color: var(--color-error);
+  font-weight: bold;
+}
+
+.snackbar {
+  z-index: 99999;
+  position: fixed;
+}
+
+.snackbar-message {
+  width: 100%;
+}

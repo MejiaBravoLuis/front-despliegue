@@ -1,0 +1,89 @@
+:root {
+  --color-1: #e0e9eb;
+  --color-2: #e0e7eb;
+  --color-3: #e3e6e8;
+  --color-4: #e87d8f;
+  --color-5: #e87d7d;
+  --color-6: #e87d7d;
+}
+
+.favorite-container {
+  margin-top: 40px;
+  padding: 32px;
+  background: var(--color-1);
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-favorite-button {
+  background-color: var(--color-4);
+  color: white;
+  transition: 0.3s;
+}
+
+.add-favorite-button:hover {
+  background-color: var(--color-5);
+}
+
+.table-buttons .MuiButton-outlinedPrimary {
+  border-color: var(--color-4);
+  color: var(--color-4);
+}
+
+.table-buttons .MuiButton-outlinedPrimary:hover {
+  background-color: var(--color-4);
+  color: white;
+}
+
+.table-buttons .MuiButton-outlinedError {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.table-buttons .MuiButton-outlinedError:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 320px;
+}
+
+.modal-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.modal-form input:focus {
+  border-color: var(--color-4);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.modal-buttons button {
+  min-width: 100px;
+  background-color: var(--color-4);
+  color: white;
+}
+
+.modal-buttons button:hover {
+  background-color: var(--color-5);
+}
+
+.deposit-modal {
+  background-color: var(--color-1);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}

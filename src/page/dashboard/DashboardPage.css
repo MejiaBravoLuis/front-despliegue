@@ -1,0 +1,35 @@
+.dashboard-container {
+  margin-top: 2rem; 
+  padding-left: 1rem;
+}
+
+.welcome-text {
+  font-size: 4rem;  
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+.custom-spotlight-card {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.custom-spotlight-card:hover {
+  transform: translateY(-5px);
+}
+.welcome-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-1);
+  text-align: center;
+  z-index: 10;
+}

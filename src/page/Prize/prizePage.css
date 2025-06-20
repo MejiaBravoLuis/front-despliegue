@@ -1,0 +1,115 @@
+.prize-form-container {
+  background-color: #e0e9eb; /* Fondo claro */
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(232, 125, 141, 0.4);
+  margin-bottom: 40px;
+  color: #e87d7d;
+}
+
+.prize-form-container h4 {
+  color: #e87d7d; /* Color principal rosa */
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.prize-card {
+  background-color: #e0e7eb; /* Fondo suave */
+  color: #e87d7d; /* Color principal rosa */
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  box-shadow: 0 6px 15px rgba(232, 125, 141, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.prize-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(232, 125, 141, 0.45);
+}
+
+.prize-card .MuiTypography-h6 {
+  font-weight: 700;
+  color: #e87d7d;
+}
+
+.prize-card .MuiTypography-body2 {
+  color: #e3e6e8;
+}
+
+.prize-card .MuiDivider-root {
+  border-color: #e0e9eb;
+  margin: 12px 0;
+}
+
+.prize-card .MuiTypography-subtitle2 {
+  color: #e87d7d;
+  font-weight: 600;
+}
+
+.prize-card .MuiCardActions-root {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  padding: 16px;
+}
+
+.prize-card .MuiButton-contained {
+  background-color: #e87d7d;
+  color: white;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.prize-card .MuiButton-contained:hover {
+  background-color: #e87d8f;
+}
+
+.prize-card .MuiButton-outlined {
+  border-color: #e87d7d;
+  color: #e87d7d;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 10px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.prize-card .MuiButton-outlined:hover {
+  background-color: #e87d7d;
+  color: white;
+}
+
+.prize-card .MuiTextField-root {
+  background-color: #e0e9eb;
+  border-radius: 12px;
+}
+
+.prize-card .MuiInputBase-input {
+  color: #e87d7d;
+}
+
+.prize-card .MuiInputLabel-root {
+  color: #e3e6e8;
+}
+
+.prize-card .MuiTypography-body2[style*="color: rgb(244, 67, 54)"] {
+  font-weight: 700;
+}
+
+.prize-alert-success {
+  margin-top: 16px;
+  background-color: #b9f6ca;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.prize-alert-error {
+  margin-top: 16px;
+  background-color: #ff8a80;
+  color: #c62828;
+  font-weight: 600;
+}
