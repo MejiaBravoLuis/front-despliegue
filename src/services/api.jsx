@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3333/BancoPenguin/v1/',
+  baseURL: 'https://bancopenguin-backend-production.up.railway.app/BancoPenguin/v1/',
   timeout: 5000
 });
 
